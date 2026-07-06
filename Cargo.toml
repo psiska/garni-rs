@@ -2,6 +2,16 @@
 name = "garni-rs"
 version = "0.1.0"
 edition = "2024"
+description = "Small server for listening for updates from Garni meteo station and exposing to prometheus."
+license = "Apache-2.0"
+license-file = "LICENSE"
+readme = "Readme.md"
+keywords = ["prometheus", "meteo", "station"]
+homepage = "https://github.com/psiska/garni-rs"
+repository = "https://github.com/psiska/garni-rs"
+
+exclude = ["*.nix", "flake.lock", "nixos-modules/*", ".github/*", ".gitignore", ".envrc"]
+
 
 [dependencies]
 axum = "0.8.9"
@@ -9,9 +19,6 @@ serde_json = "1.0.150"
 tokio = { version = "1.52.3", features = ["rt-multi-thread"] }
 tower-http = { version = "0.7.0", features = ["cors", "trace", "add-extension"] }
 serde = { version = "1.0.228", features = ["derive"] }
-once_cell = "1.21.4"
 tracing = "0.1.44"
-tower = { version = "0.5.3", features = ["timeout", "load-shed", "limit"] }
 axum-macros = "0.5.1"
-log = "0.4.33"
 tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }

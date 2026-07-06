@@ -152,8 +152,6 @@ version = "0.1.0"
 dependencies = [
  "axum",
  "axum-macros",
- "log",
- "once_cell",
  "serde",
  "serde_json",
  "tokio",
