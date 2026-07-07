@@ -10,7 +10,7 @@ keywords = ["prometheus", "meteo", "station"]
 homepage = "https://github.com/psiska/garni-rs"
 repository = "https://github.com/psiska/garni-rs"
 
-exclude = ["*.nix", "flake.lock", "nixos-modules/*", ".github/*", ".gitignore", ".envrc"]
+exclude = ["*.nix", "flake.lock", "nix/*", ".github/*", ".gitignore", ".envrc"]
 
 
 [dependencies]
