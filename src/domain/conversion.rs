@@ -1,5 +1,5 @@
-use crate::config::{ALL_PARAM, Channel, Conversion, Field, PrometheusParam};
-use crate::model::GarniRecord;
+use crate::domain::config::{ALL_PARAM, Channel, Conversion, Field, PrometheusParam};
+use crate::domain::model::GarniRecord;
 
 fn convert_f_to_c(f: f32) -> f32 {
     (f - 32.0) * 5.0 / 9.0

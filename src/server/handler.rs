@@ -1,25 +1,13 @@
-use crate::conversion::record_to_prometheus_text;
-use crate::model::{AppState, GarniRecord};
+use crate::domain::conversion::record_to_prometheus_text;
+use crate::domain::model::{AppState, GarniRecord};
 use axum::http::{HeaderMap, header};
 use axum::{
-    Json,
     extract::{Query, State},
     http::StatusCode,
     response::IntoResponse,
 };
 use axum_macros::debug_handler;
 use std::time::SystemTime;
-
-pub async fn health_checker_handler() -> impl IntoResponse {
-    const MESSAGE: &str = "Simple Garni to Prometheus transformer in Rust using Axum";
-
-    let json_response = serde_json::json!({
-        "status": "success",
-        "message": MESSAGE
-    });
-
-    Json(json_response)
-}
 
 #[debug_handler]
 pub async fn weather_set_handler(

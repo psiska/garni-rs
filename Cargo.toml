@@ -22,3 +22,5 @@ serde = { version = "1.0.228", features = ["derive"] }
 tracing = "0.1.44"
 axum-macros = "0.5.1"
 tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+config = "0.15.25"
+clap = { version = "4.6.2", features = ["derive"] }
