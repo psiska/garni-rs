@@ -4,7 +4,6 @@ version = "0.1.0"
 edition = "2024"
 description = "Small server for listening for updates from Garni meteo station and exposing to prometheus."
 license = "Apache-2.0"
-license-file = "LICENSE"
 readme = "Readme.md"
 keywords = ["prometheus", "meteo", "station"]
 homepage = "https://github.com/psiska/garni-rs"
@@ -23,4 +22,4 @@ tracing = "0.1.44"
 axum-macros = "0.5.1"
 tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
 config = "0.15.25"
-clap = { version = "4.6.2", features = ["derive"] }
+clap = { version = "4.6.2", features = ["derive", "cargo"] }
